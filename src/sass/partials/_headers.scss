@@ -1,0 +1,9 @@
+.header_cw, .header_completed, .header_onhold, .header_dropped, .header_ptw {
+  td {
+    border: 0;
+    color: $gray_dark;
+    font-size: $font_md;
+    margin-top: $spc_lg;
+    padding: 0 0 $spc_md $spc_lg;
+  }
+}

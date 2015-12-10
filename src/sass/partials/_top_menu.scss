@@ -1,0 +1,26 @@
+#list_surround table:nth-child(2) td {
+  width: (100% / 6);
+
+  a {
+    color: darken($gray_light, 15%);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    transition: all .2s;
+
+    &:before {
+      @extend %icon;
+      margin-right: 10px;
+    }
+  }
+
+  &.status_selected a, &:hover a, &:hover a:before {
+    color: $gray_dark;
+  }
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) a:before {
+      content: nth($menu_icons, $i);
+    }
+  }
+}

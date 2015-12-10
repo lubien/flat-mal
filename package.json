@@ -1,0 +1,22 @@
+{
+  "name": "flat-mal",
+  "version": "0.1.0",
+  "description": "A design for myanimelist.net lists",
+  "keywords": [
+    "design",
+    "scss",
+    "css",
+    "myanimelist",
+    "mal",
+    "flat"
+  ],
+  "author": "Lubien <lubien1996@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

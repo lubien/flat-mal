@@ -1,0 +1,38 @@
+// Font
+$font-family: 'Open Sans', sans-serif;
+
+// Colors
+$gray_light: #dedede;
+$gray_dark: #616161;
+
+$bg_body: #f2f2f2;
+$bg_thead: #1abc9c;
+$bg_tbody: #fff;
+$bg_navbar: #4285f4;
+
+$color_body: lighten($gray_dark, 5%);
+$color_thead: #fff;
+$color_tbody: $color_body;
+$color_navbar: #fff;
+
+$color_link: #000;
+$color_link_hover: #7f8c8d;
+
+$color_row_selected: #2980b9;
+$color_row_selected_details: #8e44ad;
+
+// Font Sizes
+$font-xs: 10px;
+$font_sm: 14px;
+$font_md: 18px;
+$font_lg: 24px;
+
+// Spacing (used for margins and padding)
+$spc_md: 10px;
+$spc_lg: 22px;
+
+// Bootstrap Glyphicons used in the top menu. Names:
+// eye-open, ok, pause, trash, time, align-justify
+// Check the names in http://getbootstrap.com/components/
+// and find the content in http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css
+$menu_icons: "\e105", "\e013", "\e073", "\e020", "\e023", "\e055";

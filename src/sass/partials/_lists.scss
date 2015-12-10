@@ -1,0 +1,84 @@
+.table_header, .td1, .td2 {
+  background: $bg_tbody;
+  border-bottom: 1px solid $gray_light;
+  color: $color_tbody;
+  min-width: 140px; // This is because when you have something like "XYZ/ABC" episodes, it would wrap lines
+  padding: $spc_md $spc_lg;
+  transition: all 0.1s;
+
+  &:first-child {
+    border-left: 1px solid #dedede;
+    min-width: 0px; // Remove the min-width of 140px for the first td
+  }
+  &:last-child {
+    border-right: 1px solid #dedede;
+  }
+
+  a {
+    color: $color_link;
+
+    &.animetitle {
+      font-weight: bold;
+    }
+  }
+
+  div small {
+    font-size: 0; // Hides original text before prepending icons
+    opacity: 0;
+    transition: all .3s;
+
+    a {
+      color: $gray_light;
+
+      &:first-child:before {
+        @extend %icon;
+        content: "\270f";
+      }
+
+      &:last-child:before {
+        @extend %icon;
+        content: "\e003";
+      }
+
+      &:hover:before {
+        color: $gray_dark;
+      }
+    }
+  }
+}
+
+.table_header {
+  background: $bg_thead;
+  border-top: 2px solid $gray_light;
+  border-width: 2px !important;
+  color: $color_thead;
+
+  a {
+    color: $color_thead;
+  }
+}
+
+table:hover {
+  & > tbody tr .td1, & > tbody tr .td2 { // Only when you select tables that contain .td1 or .td2
+    padding-left: 0px;
+
+    &:first-child {
+      padding-left: 10px;
+      border-left-color: $color_row_selected;
+      border-left-width: 2px !important;
+    }
+
+    div small {
+      opacity: 1;
+    }
+  }
+}
+
+.borderRBL:hover {
+  border-left-color: $color_row_selected_details !important;
+}
+
+.category_totals {
+  color: $gray_dark;
+  padding: $spc_md 0 $spc_md $spc_lg;
+}

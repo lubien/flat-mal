@@ -1,0 +1,23 @@
+/* VENDOR - Requires Open Sans font and Bootstrap Glyphicons.
+========================================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+
+/* BASE - Variables and reusable codes.
+========================================================================== */
+
+@import 'base/variables';
+@import 'base/placeholders';
+
+
+/* PARTIALS - Separated elements from MAL's lists.
+========================================================================== */ 
+
+@import 'partials/general';
+@import 'partials/navbar';
+@import 'partials/headers';
+@import 'partials/top_menu';
+@import 'partials/lists';
+@import 'partials/footer';

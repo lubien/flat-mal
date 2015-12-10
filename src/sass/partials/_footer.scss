@@ -1,0 +1,23 @@
+.category_totals span, #grand_totals span {
+  font-weight: bold;
+}
+
+#grand_totals {
+  border-top: 2px solid $gray_light;
+  padding-top: 5px;
+
+  &:before {
+    content: "Total Scores";
+    font-weight: bold;
+    margin-right: 15px;
+  }
+}
+
+#copyright {
+  padding-bottom: 5px;
+
+  &:before {
+    content: "Design Flat MAL made by Lubien - http://lubien.info.";
+    display: block;
+  }
+}

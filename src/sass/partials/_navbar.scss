@@ -1,0 +1,64 @@
+#mal_control_strip {
+  background: $bg_navbar !important;
+  color: $color_navbar;
+  font-size: $font_sm !important;
+
+  a {
+    font-family: $font-family;
+    font-size: $font_sm !important;
+  }
+
+  td {
+    border-color: rgba(255, 255, 255, .1);
+    min-width: 200px;
+  }
+
+  #mal_cs_listinfo {
+    text-align: center;
+
+    div {
+      display: inline-block;
+
+      &:nth-child(2) a {
+        font-size: 0 !important;
+
+        &:before {
+          @extend %icon;
+          font-size: $font_sm;
+          content: "\e163"; // Logout
+        }
+      }
+    }
+  }
+
+  #mal_cs_powered {
+    a:nth-child(1) img {
+      display: none;
+    }
+
+    #search {
+      #searchBox {
+        background: rgba(255, 255, 255, .3);
+        border: none;
+        color: #fff;
+        display: block;
+        font-size: 1.2em;
+        height: 100%;
+        margin: -5px 15px 0 0;
+        padding: 0 10px;
+        position: absolute;
+        width: 100%;
+      }
+
+      #searchListButton {
+        display: none;
+      }
+
+      // &:after {
+      //   content: "Powered by MyAnimeList";
+      //   display: block;
+      //   font-size: $font-xs;
+      // }
+    }
+  }
+}

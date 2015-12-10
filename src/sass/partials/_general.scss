@@ -1,0 +1,18 @@
+body {
+  background: $bg_body;
+  color: $color_body;
+  font-family: $font-family;
+}
+
+a {
+  color: $color_link;
+  text-decoration: none !important;
+  &:hover {
+    color: $color_link_hover;
+  }
+}
+
+#list_surround {
+  margin: 0 auto;
+  max-width: 1280px;
+}
